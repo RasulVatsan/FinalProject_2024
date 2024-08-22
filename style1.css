@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,500&display=swap');
+
+body {
+    background-image: url(./image/Фон.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+.text1,
+.text2,
+.text3 {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: justify;
+    margin: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* Добавлено для расположения элементов по вертикали */
+    align-items: center;
+    /* Центрирует элементы по горизонтали */
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    height: 50vh;
+    margin-left: auto;
+    /* Выравнивание по центру */
+    margin-right: auto;
+    /* Выравнивание по центру */
+    border: 4mm ridge rgba(16, 16, 225, 0.904);
+    text-align: center;
+    font-size: medium;
+}
+
+ol {
+    margin-left: 10%;
+}
+
+a:active {
+    color: rgb(19, 43, 220);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Цвет текста по умолчанию */
+    margin-left: 10px;
+}
+
+a:focus {
+    color: rgb(19, 43, 220);
+    /* Например, можно использовать такой же цвет, как для :hover */
+    outline: none;
+    /* Убирает обводку при фокусе для ссылок */
+}
+
+.img-fluid {
+    border-radius: 50%;
+}
+
+.nav-item .nav-link[class~=active] {
+    color: orange;
+}
+
+.old_cost {
+    color: #7f7f7f;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 0.1rem;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* Эффекты для навигационных ссылок */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Плавный переход цвета */
+}
+
+.nav-link:hover {
+    color: white;
+    /* Цвет текста при наведении */
+    background-color: #007bff;
+    /* Собственный цвет фона при наведении */
+    border-radius: 4px;
+    /* Закругление углов */
+    transform: scale(1.05);
+    /* Увеличение ссылки при наведении */
+}
+
+/* Перемещение кнопок и деактивация эффекта фокуса по умолчанию */
+.navbar,
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.1);
+    /* Увеличение кнопки навигации при наведении */
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    /* Убираем обводку при фокусе */
+}
+
+@media screen and (min-width: 720px) and (max-width: 2000px) {
+    body {
+        background-color: white;
+        font-size: 15pt;
+        margin: 0;
+        /* Обнуление отступов */
+
+    }
+}

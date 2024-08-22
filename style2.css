@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,500&display=swap');
+
+body {
+    background: url(./image/tigle.jpg) no-repeat center top;
+    /* Центрирование изображения по горизонтали */
+    background-size: cover;
+    /* Растягивает изображение, чтобы покрыть весь фон */
+    margin: 0;
+    /* Убирает отступы по умолчанию для body */
+    padding: 0;
+    /* Убирает внутренние отступы по умолчанию для body */
+    font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a:active {
+    color: rgb(19, 43, 220);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Цвет текста по умолчанию */
+    margin-left: 10px;
+}
+
+
+/* Навигационные ссылки */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Плавный переход цвета */
+}
+
+.nav-link:hover {
+    color: white;
+    /* Цвет текста при наведении */
+    background-color: #007bff;
+    /* Цвет фона при наведении */
+    border-radius: 4px;
+    /* Закругление углов */
+    transform: scale(1.05);
+    /* Увеличение ссылки при наведении */
+
+}
+
+/* Перемещение кнопок и деактивация эффекта фокуса по умолчанию */
+.navbar,
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: scale(1.1);
+    /* Увеличение кнопки навигации при наведении */
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    /* Убираем обводку при фокусе */
+}
+
+@media screen and (min-width: 720px) and (max-width: 2000px) {
+    body {
+        background-color: white;
+        font-size: 15pt;
+        margin: 0;
+    }
+}
